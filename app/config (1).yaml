@@ -1,0 +1,28 @@
+# config.yaml
+
+model_name: mistral
+embedding_model_name: all-MiniLM-L6-v2
+chunk_size: 300
+chunk_overlap: 50
+chroma_collection_name: college_content
+batch_size: 2000
+ug_catalog_url: https://catalog.newhaven.edu/content.php?catoid=30&navoid=2025
+grad_catalog_url: https://catalog.newhaven.edu/content.php?catoid=31&navoid=2062
+sitemap_url: https://www.newhaven.edu/sitemap.xml
+filters_to_include:
+  - /academics/
+  - /programs/
+  - /majors/
+  - /scholarship/
+  - /tuition-fees/
+  - /international/
+filters_to_exclude:
+  - /news/
+  - /events/
+  - /alumni/
+  - /give/
+  - /athletics/
+  - /calendar/
+  - /blog/
+device: cpu
+top_k: 5
