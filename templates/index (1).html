@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNH CHATBOT</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+
+    <!-- HEADER with small, circular logo -->
+    <header class="chat-header">
+      <img src="/static/UNHLOGO.png" alt="UNH Logo" class="logo circular"/>
+      <h1>UNH CHATBOT</h1>
+    </header>
+
+    <div id="chat-body" class="chat-body"></div>
+    <div id="user-typing-indicator" class="indicator">User is typing<span class="dots">...</span></div>
+    <div id="bot-thinking-indicator" class="indicator">BOT is thinking<span class="dots">...</span></div>
+
+    <form id="chat-form" class="chat-input">
+      <input
+        type="text"
+        id="question-input"
+        name="question"
+        placeholder="Ask a question..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

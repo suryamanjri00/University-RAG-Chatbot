@@ -1,0 +1,18 @@
+fastapi==0.110.0
+uvicorn==0.27.1
+chromadb==0.4.24
+sentence-transformers==2.2.2
+torch>=1.12.0
+ollama==0.1.6
+requests==2.31.0
+pydantic==1.10.8
+python-dotenv==1.0.0
+
+# Airflow (for local executor with sqlite)
+apache-airflow==2.8.1
+
+# Optional utilities
+tqdm==4.66.1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+html2text==2020.1.16
